@@ -11,7 +11,7 @@
     {
         packages.${system}.default = 
             pkgs.writeShellApplication {
-                name = "zelliij-session-manager";
+                name = "zellij-session-manager";
                 runtimeInputs = [
                     pkgs.fzf
                     pkgs.gettext
