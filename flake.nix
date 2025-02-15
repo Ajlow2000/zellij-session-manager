@@ -12,7 +12,10 @@
         packages.${system}.default = 
             pkgs.writeShellApplication {
                 name = "tmux-session-manager";
-                runtimeInputs = [];
+                runtimeInputs = [
+                    pkgs.fzf
+                    pkgs.gettext
+                ];
                 text = builtins.readFile ./zellij-session-manager.sh;
             };
 
