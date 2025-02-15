@@ -11,7 +11,7 @@
     {
         packages.${system}.default = 
             pkgs.writeShellApplication {
-                name = "tmux-session-manager";
+                name = "zelliij-session-manager";
                 runtimeInputs = [
                     pkgs.fzf
                     pkgs.gettext
